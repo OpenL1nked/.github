@@ -1,6 +1,7 @@
 <p align="center">
   <a href="https://github.com/OpenL1nked">
-    <img src="https://img.shields.io/badge/OpenL1nked-Official%20Org-blueviolet?style=for-the-badge&logo=github" alt="OpenL1nked GitHub Organization">
+    <img width="250" height="500" alt="O (1)" src="https://github.com/user-attachments/assets/6405da6e-fcd3-4ab9-a295-87ee91a687df" />
+
   </a>
 </p>
 
@@ -8,15 +9,11 @@
   <i>Unifying your digital life, open-source.</i>
 </p>
 
----
-
 <p align="center">
   <a href="[DISCORD_INVITE_LINK_HERE]">
     <img src="https://img.shields.io/badge/Join%20Our%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join the OpenL1nked Discord">
   </a>
 </p>
-
----
 
 > ### 📢 Call for Contributors & Pre-Alpha Testers: Let's Build This Together!
 > **OpenL1nked is currently in the concept and planning phase—development has not yet started.** We are actively looking for founding contributors who are passionate about open-source and want to help build this project from the ground up. If you're a developer, designer, or documenter, we need your help to bring this vision to life! We're also looking for a small group of enthusiastic pre-alpha testers to help us kick the tires. If you're passionate about open-source and want to help us find bugs and provide feedback on our very first features, please join our Discord server and let us know!
