@@ -8,7 +8,7 @@
 <p align="center"><i>Unifying your digital life, open-source.</i></p>
 
 <p align="center">
-  <a href="https://openl1nked.com">Website</a> ·
+  <a href="https://openl1nked.site">Website</a> ·
   <a href="https://github.com/OpenL1nked/openl1nked-Windows">Desktop App</a> ·
   <a href="https://github.com/OpenL1nked/scrcpy-wrapper">App Mirroring</a> ·
   <a href="#contributing">Contributing</a>
