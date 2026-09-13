@@ -1,110 +1,97 @@
 <p align="center">
   <a href="https://github.com/OpenL1nked">
-    <img width="250" height="500" alt="O (1)" src="https://github.com/user-attachments/assets/6405da6e-fcd3-4ab9-a295-87ee91a687df" />
-
+    <img width="160" alt="OpenL1nked logo" src="https://github.com/user-attachments/assets/6405da6e-fcd3-4ab9-a295-87ee91a687df" />
   </a>
 </p>
 
-<p align="center">
-  <i>Unifying your digital life, open-source.</i>
-</p>
+<h1 align="center">OpenL1nked</h1>
+<p align="center"><i>Unifying your digital life, open-source.</i></p>
 
 <p align="center">
-  <a href="[DISCORD_INVITE_LINK_HERE]">
-    <img src="https://img.shields.io/badge/Join%20Our%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join the OpenL1nked Discord">
-  </a>
+  <a href="https://openl1nked.site">Website</a> ·
+  <a href="https://github.com/OpenL1nked/openl1nked-Windows">Desktop App</a> ·
+  <a href="https://github.com/OpenL1nked/scrcpy-wrapper">App Mirroring</a> ·
+  <a href="#contributing">Contributing</a>
 </p>
-
-> ### 📢 Call for Contributors & Pre-Alpha Testers: Let's Build This Together!
-> **OpenL1nked is currently in the concept and planning phase—development has not yet started.** We are actively looking for founding contributors who are passionate about open-source and want to help build this project from the ground up. If you're a developer, designer, or documenter, we need your help to bring this vision to life! We're also looking for a small group of enthusiastic pre-alpha testers to help us kick the tires. If you're passionate about open-source and want to help us find bugs and provide feedback on our very first features, please join our Discord server and let us know!
-
-# OpenL1nked: Seamlessly Connect Your Devices 🚀
-
-**OpenL1nked** is the vision for an ambitious open-source project to build a powerful, cross-platform bridge between your desktop and mobile devices. Tired of proprietary solutions and walled gardens? We are too! OpenL1nked aims to provide all the features you love from tools like Phone Link, and then some, all built on open standards for privacy, performance, and ultimate control.
-
-Our core mission is to create a secure, fast, and feature-rich experience that truly *links* your devices, whether they're on the same Wi-Fi network or thousands of miles apart over mobile data.
-
-## ✨ Why OpenL1nked?
-
-* **Truly Cross-Platform**: Desktop clients for Windows, macOS, and Linux; mobile for Android (and limited iOS support planned).
-* **Open Source, By You, For You**: Built on the principles of transparency, community-driven development, and user privacy.
-* **Feature-Rich**: App mirroring, notification sync, file transfer, shared clipboard, comprehensive messaging, desktop controls, and more.
-* **Privacy-First**: Leveraging end-to-end encryption for all communications.
-* **Mobile Data Ready**: Connect to your devices anywhere, anytime, securely via a self-hostable relay server.
-* **Modern Tech**: Built with Rust & Tauri for a lightning-fast, lightweight, and secure desktop experience.
-
-## 🛠️ Proposed Technology Stack
-
-This is the modern, powerful tech stack we plan to use to build OpenL1nked.
-
-* **Desktop App**: [Tauri](https://tauri.app/) (Rust backend, Web frontend)
-* **Mobile App (Android)**: [Kotlin](https://kotlinlang.org/) (heavily inspired by / leveraging [KDE Connect](https://kdeconnect.kde.org/)'s architecture)
-* **Communication Protocol**: [KDE Connect Protocol](https://github.com/KDE/kdeconnect-kde/blob/master/README.md) (end-to-end encrypted, robust)
-* **Remote Connectivity**: Custom WebSocket Relay Server (Rust/Node.js)
-* **App Mirroring**: Inspired by [scrcpy](https://github.com/Genymobile/scrcpy)'s high-performance approach.
-
-## 🤝 We Need Your Help to Build This!
-
-**OpenL1nked is a 100% volunteer-driven, open-source passion project.** We are at the very beginning of our journey and are looking for core contributors to help us write the first lines of code and shape the future of the application.
-
-Please be aware that **we are not funded and cannot offer any payment for contributions.** We are building this for the community, with the community.
-
-This is a perfect opportunity to:
-* Build a significant project for your portfolio.
-* Gain experience with a modern tech stack like Rust and Tauri.
-* Be a founding member of an exciting open-source community.
-
-We welcome all contributions! Whether you're a seasoned developer, a UI/UX wizard, a documentation guru, or just enthusiastic about open-source, there's a place for you here.
-
-Please check out our:
-* [**Contribution Guidelines**](CONTRIBUTING.md) (Coming Soon) for how to get started.
-* [**Good First Issues**](https://github.com/OpenL1nked/OpenL1nked/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) (We'll create these as we formalize the initial architecture).
-
-## 🛣️ Planned Roadmap: The Path Forward
-
-This roadmap outlines our planned journey to build OpenL1nked. As a pre-development project, every task is a goal we will achieve together.
-
-### Phase 1: Foundation & Local Area Network (LAN) Connectivity
-*The bedrock of OpenL1nked: secure, local device communication.*
-
--   [ ] Initialize Tauri desktop project structure.
--   [ ] Implement core KDE Connect Protocol logic in Rust for device discovery (UDP).
--   [ ] Implement KDE Connect Protocol pairing and TLS encryption in Rust.
--   [ ] Develop basic desktop UI for device listing, pairing requests, and connection status.
--   [ ] Create a foundational Android app (or adapt KDE Connect's for initial testing).
--   [ ] Establish reliable, secure LAN connection between Tauri desktop and Android mobile.
-
-### Phase 2: Remote Connectivity via Mobile Data & Relay Server
-*Connecting your devices, no matter where they are.*
-
--   [ ] Design and develop a secure, privacy-focused WebSocket Relay Server (Rust/Node.js).
--   [ ] Implement fallback logic in desktop and mobile clients to connect to the relay server when LAN is unavailable.
--   [ ] Add user settings for configuring custom relay server addresses.
--   [ ] Ensure all relay traffic remains end-to-end encrypted (the server only relays encrypted packets).
-
-### Phase 3: Core Features & Advanced Messaging
-*Bringing essential functionality and a seamless messaging experience.*
-
--   [ ] **Notification Sync**: Implement full notification mirroring with reply/dismiss actions.
--   [ ] **Shared Clipboard**: Implement bidirectional clipboard synchronization.
--   [ ] **File Transfer**: Implement a robust UI for sending and receiving files.
--   [ ] **SMS/MMS Messaging**: Integrate full SMS/MMS conversation history and sending.
--   [ ] **RCS Messaging (Google Messages for Web Integration)**: Implement the WebView integration for RCS support.
-
-### Phase 4: High-Bandwidth Features, Cross-Platform Expansion & Polish
-*The differentiating features that make OpenL1nked truly powerful.*
-
--   [ ] **App Mirroring (Android)**: Implement high-performance screen streaming and remote control.
--   [ ] **Desktop Controls**: Implement mobile-to-desktop commands (lock, shutdown, etc.).
--   [ ] **Cross-Platform Desktop Clients**: Ensure full functionality for macOS and Linux.
--   [ ] **Limited iOS Client**: Explore and implement features possible within iOS sandboxing.
--   [ ] **Community & Polish**: Create comprehensive documentation and CI/CD pipelines.
-
-## 📜 License
-
-This project will be licensed under the [MIT License](LICENSE).
 
 ---
-<p align="center">
-  <i>OpenL1nked: Unlink from the proprietary, link to the open.</i>
-</p>
+
+> **Status: concept and planning phase.** Development is just getting started, and we're
+> looking for founding contributors — developers, designers, and documenters — as well as a
+> small group of pre-alpha testers. Community channels (Discord, etc.) will be announced here
+> once they're live; in the meantime, open an issue on any repository to get involved.
+
+## About
+
+**OpenL1nked** is an open-source project to build a cross-platform bridge between desktop and
+mobile devices — the functionality of tools like Phone Link or KDE Connect, built entirely on
+open standards, with no proprietary lock-in.
+
+The goal is a secure, fast, and feature-rich way to link your devices, whether they're on the
+same network or connected remotely over the internet.
+
+### Why OpenL1nked?
+
+| | |
+|---|---|
+| **Cross-platform** | Desktop clients for Windows, macOS, and Linux; mobile for Android, with limited iOS support planned. |
+| **Open source** | Transparent, community-driven development under the MIT License — no telemetry, no vendor lock-in. |
+| **Feature-rich** | App mirroring, notification sync, file transfer, shared clipboard, messaging, and remote desktop control. |
+| **Privacy-first** | End-to-end encryption across all communication channels. |
+| **Works anywhere** | Local connections over Wi-Fi, with a self-hostable relay server for connectivity over mobile data. |
+| **Modern stack** | Rust and Tauri power a lightweight, fast, and secure desktop client. |
+
+## Proposed technology stack
+
+| Component | Technology |
+|---|---|
+| Desktop app | [Tauri](https://tauri.app/) (Rust backend, web frontend) |
+| Mobile app (Android) | [Kotlin](https://kotlinlang.org/), inspired by [KDE Connect](https://kdeconnect.kde.org/)'s architecture |
+| Device protocol | [KDE Connect Protocol](https://github.com/KDE/kdeconnect-kde/blob/master/README.md) (end-to-end encrypted) |
+| Remote connectivity | Custom WebSocket relay server (Rust/Node.js) |
+| App mirroring | Approach inspired by [scrcpy](https://github.com/Genymobile/scrcpy) |
+
+## Repositories
+
+| Repository | Description |
+|---|---|
+| [`openl1nked-Windows`](https://github.com/OpenL1nked/openl1nked-Windows) | The desktop client — device discovery, KDE Connect pairing, and the devices dashboard UI. |
+| [`scrcpy-wrapper`](https://github.com/OpenL1nked/scrcpy-wrapper) | Desktop wrapper around scrcpy for high-performance Android screen mirroring. |
+| [`openl1nked.com`](https://github.com/OpenL1nked/openl1nked.com) | Source for the project website. |
+
+## Roadmap
+
+- **Phase 1 — Foundation & LAN connectivity**: Tauri desktop project structure, KDE Connect
+  device discovery and pairing over UDP/TLS, and a foundational Android app connecting reliably
+  over the local network.
+- **Phase 2 — Remote connectivity**: A privacy-focused WebSocket relay server with automatic
+  LAN-to-relay fallback, keeping all relayed traffic end-to-end encrypted.
+- **Phase 3 — Core features & messaging**: Notification sync, shared clipboard, file transfer,
+  and full SMS/MMS/RCS messaging support.
+- **Phase 4 — High-bandwidth features & polish**: High-performance app mirroring, remote desktop
+  controls, full macOS/Linux clients, a limited iOS client, and comprehensive documentation and
+  CI/CD.
+
+Each repository tracks its own detailed progress; this roadmap reflects the project's overall
+direction.
+
+## Contributing
+
+OpenL1nked is a 100% volunteer-driven, open-source project. We are not funded and cannot offer
+payment for contributions — we're building this for the community, with the community.
+
+Whether you're an experienced developer, a UI/UX designer, or a documentation contributor,
+there's room to help shape the project from the ground up. To get started:
+
+1. Browse the [repositories](#repositories) above and check open issues for a good first task.
+2. Open an issue to discuss significant changes before starting work.
+3. Submit a pull request — each repository's README has its own setup and development
+   instructions.
+
+## License
+
+OpenL1nked projects are published under the [MIT License](https://github.com/OpenL1nked/scrcpy-wrapper/blob/main/LICENSE).
+
+---
+
+<p align="center"><i>OpenL1nked: Unlink from the proprietary, link to the open.</i></p>
